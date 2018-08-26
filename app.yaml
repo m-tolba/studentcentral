@@ -6,9 +6,11 @@ handlers:
 - url: /static/styles.*
   static_dir: static/styles
   login: required
+  application_readable: True
 - url: /static.*
   static_dir: static
   login: required
+  application_readable: True
 - url: /.*
   script: main.app
   login: required
