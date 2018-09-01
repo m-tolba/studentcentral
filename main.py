@@ -19,8 +19,9 @@ class StudyGroupViewCollegesHandler(webapp2.RequestHandler):
     def get(self):
         testCollege1 = {"name":"Caltech", "classes":["Math1a, Math1b, Math1c"]}
         testCollege2 = {"name":"UIUC", "classes":["MATH241", "MATH286"]}
-        testCollege3 = {"name":"Cornell", "classes":["MATH1011", "MATH1012"]}
+        testCollege3 = {"name":"Cornell", "classes":[]}
         colleges = [testCollege1, testCollege2, testCollege3]
+        # colleges = []
         #THIS WILL BE REPLACED WITH DATASTORE PULL (NOT QUERY)
 
         data = {"colleges":colleges}
@@ -35,7 +36,7 @@ class StudyGroupViewClassesHandler(webapp2.RequestHandler):
 
         testCollege1 = {"name":"Caltech", "classes":["Math1a", "Math1b", "Math1c"]}
         testCollege2 = {"name":"UIUC", "classes":["MATH241", "MATH286"]}
-        testCollege3 = {"name":"Cornell", "classes":["MATH1011", "MATH1012"]}
+        testCollege3 = {"name":"Cornell", "classes":[]}
         colleges = [testCollege1, testCollege2, testCollege3]
         queryCollege = {}
         for college in colleges:
