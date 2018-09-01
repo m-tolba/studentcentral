@@ -3,5 +3,11 @@
 </head>
 <body>
   <p>Study Group View Classes</p>
+  <br>
+  <ul>
+  {% for class in queryCollege["classes"] %}
+    <li><a href="/view_groups?name={{ class }}">{{ class }}</a></li>
+  {% endfor %}
+  </ul>
 </body>
 </html>
